@@ -35,6 +35,15 @@ int main()
     }
     printf("Largest Element in The Array: %d\n",lar_ele);
 
+    // Sum of elements
+    int sum=0;
+    for (int i=0; i<(sizeof(arr)/sizeof(arr[0])); i++)
+    {
+        sum+=*(arr+i);
+
+    }
+    printf("Sum of all elements: %d\n",sum);
+
     //Numbers with 3 in them
     printf("Elements with 3 in them:\n");
     for (int i=0; i<(sizeof(arr)/sizeof(arr[0])); i++)
